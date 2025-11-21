@@ -16,4 +16,9 @@ describe("Room", function() {
     it('should start unpainted', function() {
         assert.strictEqual(false, room.isPainted);
     })
+
+    it('should be able to be painted', function() {
+        room.paintRoom()
+        assert.strictEqual(true, room.isPainted);
+    })
 });
