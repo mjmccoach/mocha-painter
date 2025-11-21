@@ -1,0 +1,23 @@
+{
+  "name": "mocha_painter",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/mjmccoach/mocha-painter#readme",
+  "bugs": {
+    "url": "https://github.com/mjmccoach/mocha-painter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjmccoach/mocha-painter.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "decorator.js",
+  "scripts": {
+    "test": "mocha specs"
+  },
+  "devDependencies": {
+    "mocha": "^11.7.5"
+  }
+}
