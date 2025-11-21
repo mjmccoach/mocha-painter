@@ -15,6 +15,12 @@ const Decorator = function() {
     Decorator.prototype.hasEnoughPaintForRoom = function(room) {
         return room.area <= this.calculateTotalLitres();
     }
+
+    Decorator.prototype.paintRoom = function(room) {
+        if (this.hasEnoughPaintForRoom(room)) {
+            room.paintRoom();
+        }
+    }
 }
 
 module.exports = Decorator;
