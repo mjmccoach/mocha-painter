@@ -11,6 +11,10 @@ const Decorator = function() {
         this.paintStock.forEach((can) => { litres = litres + can.litres});
         return litres;
     }
+
+    Decorator.prototype.hasEnoughPaintForRoom = function(room) {
+        return room.area <= this.calculateTotalLitres();
+    }
 }
 
 module.exports = Decorator;
